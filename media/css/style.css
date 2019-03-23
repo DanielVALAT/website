@@ -1,0 +1,177 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    background: rgb(255,255,255);
+}
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 440px;
+    background: linear-gradient(to bottom right,rgb(255,255,255),rgb(220,220,220));
+    border-right: 1px solid rgb(200,200,200);
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    z-index: 10;
+    overflow-y: auto;
+    animation: nav-open linear .2s forwards;
+}
+@keyframes nav-open {
+    0% {
+        left: -441px;
+    }
+    100% {
+        left: 0;
+    }
+}
+.nav .head {
+    margin: 20px 0 0 0;
+    padding: 20px 30px;
+}
+.nav .head img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 0 20px 0;
+}
+.nav .head .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0 0 5px 0;
+}
+.nav .head .description {
+    font-size: 13px;
+    color: #2c3e50;
+}
+.nav .head .location {
+    margin: 20px 0 0 0;
+    font-size: 10px;
+    color: #2c3e50;
+}
+.nav .head .location img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    height: 20px;
+    width: 20px;
+}
+.nav .head .location span {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 33px);
+}
+.nav .head .dispo {
+    margin: 15px 0 0 0;
+    font-size: 10px;
+    color: #2c3e50;
+}
+.nav .head .dispo img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    height: 20px;
+    width: 20px;
+}
+.nav .head .dispo span {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 33px);
+}
+.nav .head .buttons {
+    margin: 30px 0 0 0;
+}
+.nav .head .buttons span {
+    display: block;
+    color: #2980b9;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+.nav .head .buttons a {
+    display: inline-block;
+    padding: 7px 50px;
+    background: #2980b9;
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+}
+.nav .head .buttons a:hover {
+    background: #34495e;
+    cursor: pointer;
+}
+.nav .comps {
+    margin: 30px 0 0 0;
+}
+
+@media screen and (max-width: 640px) {
+    .nav {
+        width: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+.app-view {
+    position: fixed;
+    left: 442px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.app-view .marklet {
+    margin: 40px auto;
+    padding: 0 40px;
+    max-width: 800px;
+    animation: marklet-open linear .2s forwards;
+}
+@keyframes marklet-open {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.app-view .comps .pres {
+    font-size: 17px;
+    color: #2c3e50;
+    margin: 0 0 14px 0;
+    padding: 0 0 9px 0;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+.app-view .comps {
+    max-width: 500px;
+}
+.app-view .comps .comp {
+    margin: 20px 0 0 0;
+}
+.app-view .comps .comp img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+}
+.app-view .comps .comp .comp-data {
+    display: inline-block;
+    width: calc(100% - 63px);
+    vertical-align: middle;
+}
+.app-view .comps .comp .comp-data .comp-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.app-view .comps .comp .comp-data .comp-text {
+    font-size: 10px;
+}

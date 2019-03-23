@@ -17,4 +17,16 @@ include('bin/base.php');
         </div>
 <?php } ?>
     </div>
+    <div class="comps">
+        <div class="pres">Mes projets</div>
+<?php foreach($apc->getLocal('projects') as $project){ ?>
+        <div class="comp">
+            <img src="media/img/<?php echo $project['icon']; ?>.png">
+            <div class="comp-data">
+                <div class="comp-title"><?php echo $project['title']; ?></div>
+                <div class="comp-text"><?php echo $project['text']; ?></div>
+            </div>
+        </div>
+<?php } ?>
+    </div>
 </div>

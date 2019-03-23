@@ -18,5 +18,12 @@ class APC {
         }
         return $this->uservars[$var];
     }
+    public function isLocalSet($var){
+        if(!isset($this->uservars[$var])){
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
 ?>

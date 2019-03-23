@@ -110,13 +110,6 @@ body {
     margin: 30px 0 0 0;
 }
 
-@media screen and (max-width: 640px) {
-    .nav {
-        width: auto;
-        left: 0;
-        right: 0;
-    }
-}
 
 .app-view {
     position: fixed;
@@ -151,6 +144,10 @@ body {
 }
 .app-view .comps {
     max-width: 500px;
+    margin: 40px 0 0 0;
+}
+.app-view .comps:first-child {
+    margin: 0;
 }
 .app-view .comps .comp {
     margin: 20px 0 0 0;
@@ -174,4 +171,25 @@ body {
 }
 .app-view .comps .comp .comp-data .comp-text {
     font-size: 10px;
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .nav {
+        position: unset;
+        display: block;
+        width: auto;
+        border-right: none;
+        border-bottom: 1px solid rgb(200,200,200);
+    }
+    .app-view {
+        position: unset;
+    }
+    .app-view .marklet {
+        margin: 20px auto;
+        padding: 0 20px;
+        max-width: 800px;
+        animation: marklet-open linear .2s forwards;
+    }
 }

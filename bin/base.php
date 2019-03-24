@@ -11,7 +11,7 @@
 <body>
 <div class="nav">
     <div class="head">
-        <img src="media/img/logo.png">
+        <img src="media/img/logo.png" class="avatar">
         <div class="title"><?php echo $apc->getLocal('website.title'); ?></div>
         <div class="description"><?php echo $apc->getLocal('website.description'); ?></div>
         <div class="location">

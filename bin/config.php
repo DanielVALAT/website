@@ -20,7 +20,11 @@
 
     $comps[2]['icon'] = 'unv';
     $comps[2]['title'] = 'Vous avez un projet ?';
-    $comps[2]['text'] = "Je peux vous aider dans le choix de vos solutions ou de votre infrastructure mais je ne prend actuellement plus de commandes pour du développement.";
+    $comps[2]['text'] = "Je peux vous aider dans le choix de vos solutions ou de votre infrastructure qui seront le mieux adaptées a votre budget et votre projet.";
+
+    $comps[3]['icon'] = 'inv';
+    $comps[3]['title'] = 'Passer commande';
+    $comps[3]['text'] = "Actuellement je ne prend plus de commandes pour du développement web. Je reste disponible pour de petits projets, n'hésitez pas a me contacter !";
 
     $apc->setLocal('comps',$comps);
 

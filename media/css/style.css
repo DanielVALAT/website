@@ -194,12 +194,6 @@ body {
     .nav .head .location {
         text-align: left;
     }
-    .nav .head .buttons {
-        position: absolute;
-        left: 20px;
-        bottom: 20px;
-        right: 20px;
-    }
     .nav .head .buttons a {
         width: auto;
         padding-left: 20px;

@@ -9,7 +9,6 @@
     <script src="media/js/script.js"></script>
 </head>
 <body>
-
 <div class="nav">
     <div class="head">
         <img src="media/img/logo.png">
@@ -24,8 +23,7 @@
             <span><?php echo $apc->getLocal('website.dispo'); ?></span>
         </div>
         <div class="buttons">
-            <span>Me contacter</span>
-            <a href="<?php echo $apc->getLocal('contact.twitter'); ?>">Twitter</a>
+            <a href="<?php echo $apc->getLocal('contact.twitter'); ?>">Me suivre sur Twitter</a>
         </div>
     </div>
 </div>

@@ -177,22 +177,32 @@ body {
 
 @media screen and (max-width: 640px) {
     .nav {
-        position: unset;
+        position: relative;
         display: block;
         width: auto;
         border-right: none;
         border-bottom: 1px solid rgb(200,200,200);
-        text-align: center;
+        text-align: left;
+        animation: none;
     }
     .nav .head img {
         margin-left: auto;
         margin-right: auto;
     }
-    .nav .head .dispo {
+    .nav .head .location {
+        display: inline-block;
+        margin: 30px 0 0 0;
+        width: calc(100% / 2 - 3px);
         text-align: left;
     }
-    .nav .head .location {
+    .nav .head .dispo {
+        display: inline-block;
+        margin: 30px 0 0 0;
+        width: calc(100% / 2 - 3px);
         text-align: left;
+    }
+    .nav .head .buttons {
+        margin: 40px 0 0 0;
     }
     .nav .head .buttons a {
         width: auto;
